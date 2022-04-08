@@ -1,0 +1,15 @@
+body {
+    background-color: pink;
+}
+
+#tv-sold {
+    color: green;
+}
+
+#tv-ingekocht {
+    color: blue;
+}
+
+#nog-te-verkopen {
+    color: red;
+}
