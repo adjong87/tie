@@ -14,14 +14,22 @@
 <ol id="list"></ol>
 
 <ol id="alle-merken"></ol>
+
 Sorteer van:
-<button type="button" onClick="empty(), allTVS(sortAZ(inventory))" id="sortAZ">Merk: A -> Z</button>
-<button type="button" onClick="empty(), allTVS(sortZA(inventory))" id="sortZA">Merk: Z -> A</button>
-<button type="button" onClick="empty(), allTVS(priceAZ(inventory))" id="priceAZ">Prijs: Laag naar Hoog</button>
-<button type="button" onClick="empty(), allTVS(priceZA(inventory))" id="priceZA">Prijs: Hoog naar Laag</button>
+<div id="buttons">
+    <div>
+        <input class="checkbox" type="checkbox" id="checkbox" value="checkbox" onClick="ambiLight(this)">
+        <label for="checkbox">Ambilight</label>
+        <input class="checkbox" type="checkbox" id="checkbox" value="checkbox" onClick="smartTv(this)">
+        <label for="checkbox">SmartTv</label>
+    </div>
+    <button type="button" onClick="empty(), allTVS(sortAZ(inventory2))" id="sortAZ">Merk: A -> Z</button>
+    <button type="button" onClick="empty(), allTVS(sortZA(inventory2))" id="sortZA">Merk: Z -> A</button>
+    <button type="button" onClick="empty(), allTVS(priceAZ(inventory2))" id="priceAZ">Prijs: Laag naar Hoog</button>
+    <button type="button" onClick="empty(), allTVS(priceZA(inventory2))" id="priceZA">Prijs: Hoog naar Laag</button>
 
+</div>
 <div id="model-info"></div>
-
 
 
 <script src="main.js"></script>

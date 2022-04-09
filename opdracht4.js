@@ -1,4 +1,5 @@
-const teller = 0;
+const inventory2 = [...inventory]
+
 function checkTV(array, index) {
     const array2 = [...array]
     const tvInfo = document.getElementById("model-info")
@@ -8,7 +9,8 @@ function checkTV(array, index) {
     `
     <h3>${array2[index].brand} ${array2[index].type}  ${array2[index].name}</h3> 
     <h4>${pricer(array2[index].price)}</h4>
-    <h5>${sizer(array2[index].availableSizes)}</>
+    <h5>${sizer(array2[index].availableSizes)}</h5>
+    ${(inStock(array2[index].originalStock, array2[index].sold))}
     `
 }
 
@@ -44,6 +46,14 @@ function sizer2(arraySizes) {
     return arraySizes.join(" | ")
 }
 
+
+function inStock(bought, sold) {
+    if (bought - sold === 0) {
+        return "Helaas dit model is uitverkocht"
+    }
+    return "nog " + (bought - sold) + " op voorraad"
+}
+
 //Opdracht 4e
 function allTVS(array) {
     for (let i = 0; i < array.length; i++) {
@@ -51,4 +61,5 @@ function allTVS(array) {
     }
 }
 
-allTVS(inventory)
+
+allTVS(inventory2)

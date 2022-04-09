@@ -23,7 +23,7 @@ body {
 #model-info {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -38,4 +38,10 @@ body {
 button {
     align-self: center;
     width: 200px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
