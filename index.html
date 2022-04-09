@@ -14,8 +14,13 @@
 <ol id="list"></ol>
 
 <ol id="alle-merken"></ol>
+Sorteer van:
+<button type="button" onClick="empty(), allTVS(sortAZ(inventory))" id="sortAZ">Merk: A -> Z</button>
+<button type="button" onClick="empty(), allTVS(sortZA(inventory))" id="sortZA">Merk: Z -> A</button>
+<button type="button" onClick="empty(), allTVS(priceAZ(inventory))" id="priceAZ">Prijs: Laag naar Hoog</button>
+<button type="button" onClick="empty(), allTVS(priceZA(inventory))" id="priceZA">Prijs: Hoog naar Laag</button>
 
-<p id="model-info"></p>
+<div id="model-info"></div>
 
 
 
@@ -24,5 +29,7 @@
 <script src="opdracht2.js"></script>
 <script src="opdracht3.js"></script>
 <script src="opdracht4.js"></script>
+<script src="opdracht5.js"></script>
+
 </body>
 </html>

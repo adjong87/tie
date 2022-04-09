@@ -8,8 +8,8 @@ for (let i = 0; i < inventory.length; i++) {
 
 const tvSold = document.getElementById("tv-sold")
 tvSold.innerHTML =
-    `<h3>Totaal aantal verkochte televisies:</h3> 
-    <p>${totalSold} </p>`
+    `<h4>Totaal aantal verkochte televisies:</h4> 
+    <h3>${totalSold} </h3>`
 
 // Opdracht 2b: Zorg ervoor dat dit aantal in het groen wordt weergegeven op de pagina.
 //

@@ -1,5 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
     background-color: pink;
+    flex-direction: column;
 }
 
 #tv-sold {
@@ -12,4 +18,24 @@ body {
 
 #nog-te-verkopen {
     color: red;
+}
+
+#model-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#model-info > div{
+    border: 1px solid;
+    width: 650px;
+    margin: 1px;
+    text-align: center;
+    padding: 1px;
+}
+
+button {
+    align-self: center;
+    width: 200px;
 }
